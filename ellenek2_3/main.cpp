@@ -6,9 +6,14 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+void T(int n){
+    for(int i = 10; i<=n; i++)
+        cout << "T(" << i << ") = " << (i*(i+1)/2) << endl;
+}
+int main() {
+    int n = 25;
+    T(n);
     return 0;
 }
